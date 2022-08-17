@@ -6,6 +6,11 @@
 
 Console.Clear();
 
+// тип данных применен осознано, т.к. решить задачу бедного
+// шаха с шахматной доской и удвоения зерен на каждой клетке
+// решить по другому не удалось, более глобальных задач
+// не рассматривал
+
 double numA = GetNumberFromUser("Введите целое число A: ", "Ошибка ввода!");
 double numB = GetNumberFromUser("Введите целое число B: ", "Ошибка ввода!");
 
@@ -36,8 +41,6 @@ double GetNumberDegree(double numberUserA, double numberUserB)
   double total = 1;
   for (i = 0; i < numberUserB; i++)
   {
-    if (numberUserB == 0)
-      total = 1;
     if (numberUserB == 1)
       total = numberUserA;
     if (numberUserB > 1)
